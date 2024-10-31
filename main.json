@@ -9,7 +9,11 @@
         "price":"21",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
+
     },
     {
         "section":"Дитяча Література",
@@ -21,7 +25,10 @@
         "price":"150",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Дитяча Література",
@@ -33,7 +40,10 @@
         "price":"360",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Дитяча Література",
@@ -45,7 +55,10 @@
         "price":"290",
         "discount":"498",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Дитяча Література",
@@ -57,7 +70,10 @@
         "price":"139",
         "discount":"200",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Дитяча Література",
@@ -69,7 +85,10 @@
         "price":"100",
         "discount":"395",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Дитяча Література",
@@ -81,7 +100,10 @@
         "price":"250",
         "discount":"345",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Дитяча Література",
@@ -93,7 +115,10 @@
         "price":"350",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
 
 
@@ -111,7 +136,10 @@
         "price":"666",
         "discount":"588",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Художня Література",
@@ -123,7 +151,10 @@
         "price":"467",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Художня Література",
@@ -135,7 +166,10 @@
         "price":"299",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Художня Література",
@@ -147,7 +181,10 @@
         "price":"112",
         "discount":"149",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Художня Література",
@@ -159,7 +196,10 @@
         "price":"169",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Художня Література",
@@ -171,7 +211,10 @@
         "price":"165",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Художня Література",
@@ -183,7 +226,10 @@
         "price":"1999",
         "discount":"955",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Художня Література",
@@ -195,7 +241,10 @@
         "price":"290",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
 
 
@@ -212,7 +261,10 @@
         "price":"730",
         "discount":"658",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Класична проза",
@@ -224,7 +276,10 @@
         "price":"120",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Класична проза",
@@ -236,7 +291,10 @@
         "price":"900",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Класична проза",
@@ -248,7 +306,10 @@
         "price":"159",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Класична проза",
@@ -260,7 +321,10 @@
         "price":"972",
         "discount":"800",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Класична проза",
@@ -272,7 +336,10 @@
         "price":"204",
         "discount":"111",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Класична проза",
@@ -284,7 +351,10 @@
         "price":"120",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Класична проза",
@@ -296,7 +366,10 @@
         "price":"730",
         "discount":"658",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
 
 
@@ -313,7 +386,10 @@
         "price":"583",
         "discount":"30",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Детективи",
@@ -325,7 +401,10 @@
         "price":"888",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Детективи",
@@ -337,7 +416,10 @@
         "price":"856",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Детективи",
@@ -349,7 +431,10 @@
         "price":"165",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Детективи",
@@ -361,7 +446,10 @@
         "price":"956",
         "discount":"875",
         "text_ner_price":"грн",
-        "text_ner_price_discount":"грнн"
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Детективи",
@@ -373,7 +461,10 @@
         "price":"182",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"",
+        "btnToBasket":"",
+        "btnWait":"Скоро..."
     },
     {
         "section":"Детективи",
@@ -385,7 +476,10 @@
         "price":"583",
         "discount":"30",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"грн",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     },
     {
         "section":"Детективи",
@@ -397,6 +491,9 @@
         "price":"888",
         "discount":"",
         "text_ner_price":"грн",
-        "text_ner_price_discount":""
+        "text_ner_price_discount":"",
+        "btnBuy":"Купити",
+        "btnToBasket":"До кошика",
+        "btnWait":""
     }
   ]

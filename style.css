@@ -1,10 +1,16 @@
 /*MAIN INFORMATION*/
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: beige;
+    background: #56CE9A;
+    background: -moz-linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
+    background: -webkit-linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
+    background: linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
 }
 body img{
     user-select: none;
@@ -176,7 +182,7 @@ body img{
 .hidden-account {
     display: none;
     position: fixed;
-    top: -20;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -198,8 +204,8 @@ body img{
     text-align: center;
     width: 90%;
     max-width: 400px;
-    font-family: Arial, sans-serif;
 }
+
 .hidden-account h2 {
     margin: 0;
     margin-bottom: 20px;
@@ -229,50 +235,70 @@ body img{
 .hidden-account button:hover {
     background-color: #555;
 }
-/*BASKET*/
+/*BASKET AND HIDDEN BASCKET*/
+.cart-icon {
+    background-image: url(png/cart.png);
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
 
 /*MAIN CONTENT*/
 .greeating-box {
-    background-image: url(png/background.jpg);
-    height: 400px;
+    background-image: url(png/2a83f87-knigi-1542.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.greeting-content{
+    padding: 20px;
+    background-color: #18181857;
+    border-radius: 15px;
+    cursor: pointer;
+}
 .greeting-content h1 {
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 900;
     font-weight: bold;
-    color: #333;
+    color: rgb(242, 242, 242);
     margin-bottom: 20px;
 }
 .greeting-scroll-down{
     display: inline-block;
-    font-size: 24px;
-    color: #333;
     text-decoration: none;
-    margin-top: 20px;
-    cursor: pointer;
+}
+.greeting_img{
+    width: 50px;
+    height: 50px;
 }
 
 /*PRODUCTS SECTION*/
-.main-content-box-book{
-    background-color: #555;
+.main-content-box-book-bg{
     height: max-content;
-    border: 1px solid transparent;
-    border-radius: 0 0 15px 15px;
-    margin-bottom: 20px;
-
     position: relative;
+    background-color: rgb(255 255 255 / 56%);
+}
+.first-content-box{
+    padding-top: 30px;
 }
 .book-sticker{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 15px;
     align-items: center;
-    width: max-content;
-    margin-top: 25px;
-    height: 40px;
+    width: 25%;
+    padding-left: 20px;
+    height: 50px;
     border-radius: 0 30px 30px 0;
     user-select: none;
 
@@ -308,7 +334,7 @@ body img{
 }
 .book-sticker-text{
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 800;
     margin-left: 10px;
 }
@@ -328,7 +354,7 @@ body img{
     justify-content: center;
     width:240px;
     padding: 20px;
-    border: 1px solid green;
+    border: none;
     border-radius: 15px;
     cursor: pointer;
     background-color: white;
@@ -362,55 +388,84 @@ body img{
     border-radius: 0 0 15px 15px;
     padding: 0 20px 20px 20px;
 }
-.catalog-item-extra, .item-bottom-btns{
+.catalog-item-extra{
     margin-top: 15px;
 }
 .nayavnist-box{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.card-nayavnist-img{
+}.card-nayavnist-img{
     width: 20px;
     margin-right: 20px;
-}
-.Vnayavnist-text{
+}.Vnayavnist-text{
     color: rgb(9, 83, 9);
     font-weight: 800;
-}
-.NeVnayavnist-text{
+}.NeVnayavnist-text{
     color: rgb(83, 9, 9);
     font-weight: 800;
 }
-.item-bottom-btns{
+
+
+
+
+.item-bottom-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botton-btn-VNAyavnosyi {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    margin-bottom: 10px;
 }
-.item-bottom-btns button{
-    padding: 10px;
-    font-size: 18px;
+
+.botton-btn-VNAyavnosyi span {
+    padding: 10px 20px;
+    font-size: 15px;
     font-weight: 700;
     color: white;
-    border:1px solid transparent;
-    border-radius: 15px;
-    width: 50%;
-    cursor:pointer;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.btn-to-basket{
-    background-color: blue;
+
+.btn-to-basket {
+    background-color: #2c3e50;
 }
-.btn-to-buy{
-    background-color: red;
+
+.btn-to-buy {
+    background-color: #C59237;
 }
-.item-bottom-btns button:hover{
-    opacity: 0.5;
+
+.btn-wait {
+    background-color: #56CE9A;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
 }
+
+.btn-to-basket:hover {
+    background-color: #34495e;
+}
+
+.btn-to-buy:hover {
+    background-color: #d49a4d;
+}
+
+.btn-wait {
+    opacity: 0.8;
+}
+
 /*Footer*/
 
 .footer-bg {
-    background-color: #2c3e50;
+    background-color: #242e38;
     color: #ecf0f1;
     font-family: Arial, sans-serif;
     max-width: 100%; 
@@ -434,30 +489,24 @@ body img{
     line-height: 1.6;
     color: #ecf0f1;
 }
-.footer-text-title {
-    font-weight: bold;
-    font-size: 18px;
-    color: #e74c3c;
-}
-
-.fotter-number {
+.fotter-middleSize-text{
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 800;
+}.fotter-smalSize-text{
+    font-size: 18px;
+    font-weight: 700;
 }
-
 .footer-text-workhours {
     font-size: 16px;
     font-weight: 700;
     color: #bdc3c7;
     margin-top: 5px;
 }
-
 .footer-left-content-social-icons {
     display: flex;
     gap: 15px;
     margin-top: 15px;
 }
-
 .social-icon-a {
     display: inline-block;
     width: 36px;
@@ -489,13 +538,12 @@ body img{
 .footer-juners-a{
     display: flex;
     flex-direction: column;
-
-    background-color:#2a4158;
+    background-color: #2c363f;
     padding: 20px;
     border: 1px solid transparent;
     border-radius: 15px;
 }
-.footer-text-near-logo {
+.footer-title{
     font-size: 20px;
     font-weight: 900;
     color: #e74c3c;
@@ -534,19 +582,12 @@ body img{
 .footer-right a{
     text-decoration: none;
 }
-.footer-middle-title {
-    font-size: 20px;
-    color: #e74c3c;
-    margin-bottom: 10px;
-}
-
 .footer-middle-text {
     font-size: 18px;
     color: #ecf0f1;
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 1;
+    width: 80%;
 }
 .footer-thick-line {
     width: 100%;
@@ -558,4 +599,38 @@ body img{
     color: #95a5a6;
     text-align: center;
     margin-top: 10px;
+}
+
+/*SCROLL TO TOP*/
+.scroll_to_top_button{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1000;
+    width: 100px;
+    height: 90px;
+    color: #dcdcdc;
+    cursor: pointer;
+    border: 8px solid #dcdcdc;
+    border-radius: 50%;
+    transition: 0.6s;
+    transform: translateY(25px);
+    opacity: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.scroll_to_top_button:hover{
+    border-color: orange;
+    color: orange;
+    transition: 0.2s;
+}
+.scroll_btn_visibility{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.9s;
+}
+.scroll_arrow{
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }

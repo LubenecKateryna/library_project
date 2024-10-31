@@ -25,27 +25,28 @@
                             <section class="hidden-menu-account-bg">
                                 <div class="class_account account-section">
                                     <div class="account-icon"></div>
-                                    <div class="account-text" id="accountText">Вход в аккаунт</div>
+                                    <div class="account-text" id="accountText">Увійти  в акаунт</div>
                                 </div>
                             </section>
                             <section class="nav-juners">
                                 <hr class="thick-line">
-                                <a href="#first-junr-books" class="first-a nav-juners-item">Дитяча<br>Література</a>
-                                <a href="#second-junr-books" class="second-a nav-juners-item">Художня<br>Література</a>
-                                <a href="#third-junr-books" class="third-a nav-juners-item">Класична<br>проза</a>
+                                <a href="#first-junr-books" class="first-a nav-juners-item">Дитяча Література</a>
+                                <a href="#second-junr-books" class="second-a nav-juners-item">Художня Література</a>
+                                <a href="#third-junr-books" class="third-a nav-juners-item">Класична проза</a>
                                 <a href="#fours-junr-books" class="fourth-a nav-juners-item">Детективи</a>
                                 <hr class="thick-line">
                             </section>
                             <section class="nav-content">
-                                <a class="usual-nav-a" href="#header">Главная</a>
+                                <a class="usual-nav-a" href="#header">Головна</a>
                                 <a class="usual-nav-a" href="#footer">Контакты</a>
                             </section>
                         </div>
                     </section>
                     <section id="hidden-account" class="hidden-account">
                         <div class="hidAc-content">
-                            <h2>Введіте ваше им'я</h2>
                             <input class="hiddAcc-content-input" type="text" id="getnameInput" placeholder="Ваше і'мя">
+                            <input class="hiddAcc-content-input" type="text" id="getnameInput" placeholder="Призвище">
+                            <input class="hiddAcc-content-input" type="text" id="getnameInput" placeholder="Картка">
                             <p class="hidAcc-p">Напитсність "готово", щоб вийти</p>
                             <button id="hidden-input-btn">Готово</button>
                         </div>
@@ -59,6 +60,7 @@
                 </div>
                 <div class="left-side-content">
                     <div class="class_account header-content-right-item account-icon"></div>
+                    <div id="cart-icon" class="cart-icon"></div>
                 </div>
             </div>
         </section>
@@ -66,11 +68,13 @@
     <main>
         <section class="greeating-box container">
             <div class="greeting-content">
-                <h1 id="greetingText">Привіт, давай читати!</h1>
-                <a href="#next-section" class="greeting-scroll-down">&#8595;</a>
+                <div id="scroll-greeting" class="scroll-greeting">
+                    <h1 id="greetingText">Привіт, давай читати!</h1>
+                    <img src="png/стрелка.png" alt="arrow to content in greeting_box" class="greeting_img">
+                </div>
             </div>
         </section>
-        <section id="first-junr-books" class="first-content-box-bg main-content-box-book container">
+        <section id="first-junr-books" class="first-content-box main-content-box-book-bg container">
             <div class="first-sticker-bg book-sticker">
                 <p class="book-sticker-text">
                     Дитяча Література
@@ -81,7 +85,7 @@
             </div>
             <section class="first-products-list products-list"></section>
         </section> 
-        <section id="second-junr-books" class="second-content-box-bg main-content-box-book container">
+        <section id="second-junr-books" class="second-content-box main-content-box-book-bg container">
             <div class="second-sticker-bg book-sticker">
                 <p class="book-sticker-text">
                     Художня Література
@@ -92,7 +96,7 @@
             </div>
             <section class="second-products-list products-list"></section>
         </section> 
-        <section id="third-junr-books" class="third-content-box-bg main-content-box-book container">
+        <section id="third-junr-books" class="third-content-box main-content-box-book-bg container">
             <div class="third-sticker-bg book-sticker">
                 <p class="book-sticker-text">
                     Класична проза
@@ -103,7 +107,7 @@
             </div>
             <section class="third-products-list products-list"></section>
         </section> 
-        <section id="fours-junr-books" class="fourth-content-box-bg main-content-box-book container">
+        <section id="fours-junr-books" class="fourth-content-box main-content-box-book-bg container">
             <div class="fourth-sticker-bg book-sticker">
                 <p class="book-sticker-text">
                     Детективи
@@ -122,9 +126,9 @@
                 <div class="footer-row-container">
                     <div class="footer-left">
                         <p class="footer-left-content-text">
-                            <span class="footer-text-title">Бесплатно по Украине</span><br>
-                            <i class="fotter-number">+000-800-335-425</i><br>
-                            <span class="footer-text-workhours">Без выходных, с 9 до 20
+                            <span class="footer-title">Бесплатно по Украине</span><br>
+                            <i class="fotter-middleSize-text">+000-800-335-425</i><br>
+                            <span class="fotter-smalSize-text">Без выходных, с 9 до 20
                         </p>
                         <div class="footer-left-content-social-icons">
                             <a href="https://instagram.com" class="social-icon-a instagram"> </a>
@@ -135,15 +139,17 @@
                     </div>
                     <div class="footer-middle">
                         <p class="footer-middle-text">
-                            <span class="footer-middle-title">Про нас</span><br>
-                            Читайте и покупайте книги в библиотеке от топовых украинских и мировых авторов<br>
-                            <i class="footer-middle-text-i">(Тобто в нас)</i>
+                            <span class="footer-title">Про нас</span><br>
+                            <span class="fotter-smalSize-text">
+                                Читайте та купуйте книги в бібліотеці від топових українських та світових авторів
+                            </span><br>
+                            <i>(Тобто в нас)</i>
                         </p>
                     </div>
                     <div class="footer-right">
                         <a href="index.html" class="footer-content-item-logo">
                             <img src="png/Logo3.png" alt="logo icon" class="footer-content-item-img-logo">
-                            <span class="footer-text-near-logo"><i>МагазинКниг</i></span>
+                            <span class="footer-title"><i>МагазинКниг</i></span>
                         </a>
                         <section class="footer-juners-a">
                             <a href="#first-junr-books" class="first-a-footer footer-juners-item">Дитяча Література</a>
@@ -155,10 +161,16 @@
                 </div>
                 <hr class="footer-thick-line">
                 <p class="footer-bottom-title">
-                    © МагазинКниг 2004-2024. Все права защищены
+                    © МагазинКниг 2004-2024. Усі права захищені
                 </p>
             </div>
         </div>
+
+        <section id="scroll_to_top_box" class="scroll_to_top_wrapper">
+            <button class="scroll_to_top_button">
+                <span class="scroll_arrow">&#5169;</span>
+            </button>
+        </section>
     </footer>
     
     <script src="script.js"></script>
