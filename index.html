@@ -4,29 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>library</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="full_conatiner header_bg">
-            <div class="container header_wrap">
-                <div class="header_side R">
-                    <a href="index.html" class="logo" title="Our logo"></a>
+        <section id="header" class="header-bg ful-container">
+            <div class="header-content-position container">
+                <div class="right-side-content">
+                    <button id="header-menu-btn" class="menu-btn">
+                        <div class="header-content-lineMenu">
+                            <div class="menu-line l1"></div>
+                            <div class="menu-line l2"></div>
+                            <div class="menu-line l3"></div>
+                        </div>
+                        <span>Меню</span>
+                    </button>
+                    <section class="hidden-menu">
+                        <div id="lefthiddemMenuBox" class="hedden-menu-box">
+                            <section class="hidden-menu-account-bg">
+                                <div class="class_account account-section">
+                                    <div class="account-icon"></div>
+                                    <div class="account-text" id="accountText">Вход в аккаунт</div>
+                                </div>
+                            </section>
+                            <section class="nav-juners">
+                                <hr class="thick-line">
+                                <a href="#first-junr-books" class="first-a nav-juners-item">Дитяча<br>Література</a>
+                                <a href="#second-junr-books" class="second-a nav-juners-item">Художня<br>Література</a>
+                                <a href="#third-junr-books" class="third-a nav-juners-item">Класична<br>проза</a>
+                                <a href="#fours-junr-books" class="fourth-a nav-juners-item">Детективи</a>
+                                <hr class="thick-line">
+                            </section>
+                            <section class="nav-content">
+                                <a class="usual-nav-a" href="#header">Главная</a>
+                                <a class="usual-nav-a" href="#footer">Контакты</a>
+                            </section>
+                        </div>
+                    </section>
+                    <section id="hidden-account" class="hidden-account">
+                        <div class="hidAc-content">
+                            <h2>Введіте ваше им'я</h2>
+                            <input class="hiddAcc-content-input" type="text" id="getnameInput" placeholder="Ваше і'мя">
+                            <p class="hidAcc-p">Напитсність "готово", щоб вийти</p>
+                            <button id="hidden-input-btn">Готово</button>
+                        </div>
+                    </section>
                 </div>
-                <nav class="header_side L nav_wrap">
-                    <a href="" class="nav_btn account" title="Want to create an account?"></a>
-                    <a href="" class="nav_btn basket" title="You can pay here"></a>
-                    <a class="nav_btn menu"></a>
-                </nav>
+                <div class="meddle-side-content">
+                    <a href="index.html" class="header-content-item-logo">
+                        <img src="png/Logo3.png" alt="logo icon" class="content-item-img-logo">
+                        <span class="text-near-logo"><i>МагазинКниг</i></span>
+                    </a>
+                </div>
+                <div class="left-side-content">
+                    <div class="class_account header-content-right-item account-icon"></div>
+                </div>
             </div>
-        </div>
+        </section>
     </header>
     <main>
-
+        <section class="greeating-box container">
+            <div class="greeting-content">
+                <h1 id="greetingText">Привіт, давай читати!</h1>
+                <a href="#next-section" class="greeting-scroll-down">&#8595;</a>
+            </div>
+        </section>
+        <section id="first-junr-books" class="first-content-box-bg main-content-box-book container">
+            <div class="first-sticker-bg book-sticker">
+                <p class="book-sticker-text">
+                    Дитяча Література
+                </p>
+                <div class="book-sticker-container-for-logo">
+                    <img src="png/logo3.png" alt="logo icon" class="sticker-img">
+                </div>
+            </div>
+            <section class="first-products-list products-list"></section>
+        </section> 
+        <section id="second-junr-books" class="second-content-box-bg main-content-box-book container">
+            <div class="second-sticker-bg book-sticker">
+                <p class="book-sticker-text">
+                    Художня Література
+                </p>
+                <div class="book-sticker-container-for-logo">
+                    <img src="png/logo3.png" alt="logo icon" class="sticker-img">
+                </div>
+            </div>
+            <section class="second-products-list products-list"></section>
+        </section> 
+        <section id="third-junr-books" class="third-content-box-bg main-content-box-book container">
+            <div class="third-sticker-bg book-sticker">
+                <p class="book-sticker-text">
+                    Класична проза
+                </p>
+                <div class="book-sticker-container-for-logo">
+                    <img src="png/logo3.png" alt="logo icon" class="sticker-img">
+                </div>
+            </div>
+            <section class="third-products-list products-list"></section>
+        </section> 
+        <section id="fours-junr-books" class="fourth-content-box-bg main-content-box-book container">
+            <div class="fourth-sticker-bg book-sticker">
+                <p class="book-sticker-text">
+                    Детективи
+                </p>
+                <div class="book-sticker-container-for-logo">
+                    <img src="png/logo3.png" alt="logo icon" class="sticker-img">
+                </div>
+            </div>
+            <section class="fourth-products-list products-list"></section>
+        </section> 
+            
     </main>
-    <footer>
-
+    <footer id="footer" class="footer-bg ful-container">
+        <div class="container">
+            <div class="footer-column-wrapper">
+                <div class="footer-row-container">
+                    <div class="footer-left">
+                        <p class="footer-left-content-text">
+                            <span class="footer-text-title">Бесплатно по Украине</span><br>
+                            <i class="fotter-number">+000-800-335-425</i><br>
+                            <span class="footer-text-workhours">Без выходных, с 9 до 20
+                        </p>
+                        <div class="footer-left-content-social-icons">
+                            <a href="https://instagram.com" class="social-icon-a instagram"> </a>
+                            <a href="https://telegram.org" class="social-icon-a telegram"></a>
+                            <a href="https://facebook.com" class="social-icon-a facebook"></a>
+                            <a href="https://viber.com" class="social-icon-a viber"></a>
+                        </div>
+                    </div>
+                    <div class="footer-middle">
+                        <p class="footer-middle-text">
+                            <span class="footer-middle-title">Про нас</span><br>
+                            Читайте и покупайте книги в библиотеке от топовых украинских и мировых авторов<br>
+                            <i class="footer-middle-text-i">(Тобто в нас)</i>
+                        </p>
+                    </div>
+                    <div class="footer-right">
+                        <a href="index.html" class="footer-content-item-logo">
+                            <img src="png/Logo3.png" alt="logo icon" class="footer-content-item-img-logo">
+                            <span class="footer-text-near-logo"><i>МагазинКниг</i></span>
+                        </a>
+                        <section class="footer-juners-a">
+                            <a href="#first-junr-books" class="first-a-footer footer-juners-item">Дитяча Література</a>
+                            <a href="#second-junr-books" class="second-a-footer footer-juners-item">Художня Література</a>
+                            <a href="#third-junr-books" class="third-a-footer footer-juners-item">Класична проза</a>
+                            <a href="#fours-junr-books" class="fourth-a-footer footer-juners-item">Детективи</a>
+                        </section>
+                    </div>
+                </div>
+                <hr class="footer-thick-line">
+                <p class="footer-bottom-title">
+                    © МагазинКниг 2004-2024. Все права защищены
+                </p>
+            </div>
+        </div>
     </footer>
     
     <script src="script.js"></script>

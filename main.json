@@ -1,0 +1,402 @@
+[
+    {
+        "section":"Дитяча Література",
+        "img":"МаленькийПринц.png",
+        "title":"Маленький принц. Ілюстроване видання",
+        "author":"Антуан де Сент-Экзюпери",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"21",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"НічПередРіздвом.png",
+        "title":"Ніч перед різдвом",
+        "author":"Николай Гоголь",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"150",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"ТореодориЗВасюківки.png",
+        "title":"Тореадори з Васюківки. Трилогія про пригоди двох друзів",
+        "author":"Всеволод Нестайко",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"360",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"ДикийРобот.png",
+        "title":"Книга Дикий робот",
+        "author":"Питер Браун",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"290",
+        "discount":"498",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"МісцеДляДракона.png",
+        "title":"Місце для дракона",
+        "author":"Юрий Винничук",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"139",
+        "discount":"200",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"МандБабайАгаІКозакНевидим.png",
+        "title":"Бабай-Ага і козак Невидим",
+        "author":"Леся Мовчун",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"100",
+        "discount":"395",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"ТаємницяКозацькоїШаблі.png",
+        "title":"Таємниця козацької шаблі",
+        "author":"Зирка Мензатюк",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"250",
+        "discount":"345",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Дитяча Література",
+        "img":"МандрівнийЗамок.png",
+        "title":"Мандрівний замок Хаула",
+        "author":"Диана Уинн Джонс",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"350",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+
+
+
+
+
+
+    {
+        "section":"Художня Література",
+        "img":"ЖагаДоЖиття.png",
+        "title":"Жага до життя",
+        "author":"Джек Лондон",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"666",
+        "discount":"588",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Художня Література",
+        "img":"ЧайкаДжонатанЛивингстон.jpg",
+        "title":"Чайка Джонатан Ливингстон. Иллюзии. Карманный справочник мессии",
+        "author":"Ричард Бах",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"467",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Художня Література",
+        "img":"ЗачарованаДеснаНезабутнєУкраїнавОгніНіч перед боєм.jpg",
+        "title":"Зачарована Десна. Незабутнє. Україна в Огні. Ніч перед боєм",
+        "author":"Олександр Довженко",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"299",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Художня Література",
+        "img":"ДорогоюЦіною.jpg",
+        "title":"Дорогою ціною",
+        "author":"Михаил Коцюбинский",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"112",
+        "discount":"149",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Художня Література",
+        "img":"ЛисМикита.jpg",
+        "title":"Лис Микита",
+        "author":"Иван Франко",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"169",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Художня Література",
+        "img":"БілеІкло.png",
+        "title":"Біле Ікло",
+        "author":"ЗДжек Лондон",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"165",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Художня Література",
+        "img":"СтоТисяч.jpg",
+        "title":"Сто тисяч",
+        "author":"Иван Карпенко-Карый",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"1999",
+        "discount":"955",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Художня Література",
+        "img":"ЗолотийЖук.jpg",
+        "title":"Золотий жук",
+        "author":"Эдгар Аллан По",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"290",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+
+
+
+
+
+    {
+        "section":"Класична проза",
+        "img":"ТініЗабутих Предків.jpg",
+        "title":"Тіні забутих предків. Intermezzo",
+        "author":"Михаил Коцюбинский",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"730",
+        "discount":"658",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Класична проза",
+        "img":"ЧорнаРада.jpg",
+        "title":"Чорна рада",
+        "author":"Пантелеймон Кулиш",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"120",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Класична проза",
+        "img":"ХібаРевутьВолиЯкЯслаПовні.jpg",
+        "title":"Хіба ревуть воли, як ясла повні",
+        "author":"Панас Мирный",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"900",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Класична проза",
+        "img":"ЛісоваПісня.jpg",
+        "title":"Лісова пісня",
+        "author":"Леся Украинка",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"159",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Класична проза",
+        "img":"ДонКихот.png",
+        "title":"Дон Кихот",
+        "author":"Мигель де Сервантес",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"972",
+        "discount":"800",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Класична проза",
+        "img":"КайдашеваCімя.jpg",
+        "title":"Кайдашева сім’я",
+        "author":"Иван Нечуй-Левицкий",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"204",
+        "discount":"111",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+    {
+        "section":"Класична проза",
+        "img":"ЧорнаРада.jpg",
+        "title":"Чорна рада",
+        "author":"Пантелеймон Кулиш",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"120",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Класична проза",
+        "img":"ТініЗабутих Предків.jpg",
+        "title":"Тіні забутих предків. Intermezzo",
+        "author":"Михаил Коцюбинский",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"730",
+        "discount":"658",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грн"
+    },
+
+
+
+
+
+    {
+        "section":"Детективи",
+        "img":"ПістряваCтрічка.jpg",
+        "title":"Аудиокнига Пістрява стрічка",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"583",
+        "discount":"30",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Детективи",
+        "img":"ПригодиШерлокаХолмсаТом1.jpg",
+        "title":"Пригоди Шерлока Холмса. Том 1",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"888",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Детективи",
+        "img":"ПригодиШерлокаХомлса2.png",
+        "title":"Книга Пригоди Шерлока Холмса. Том 2",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"856",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Детективи",
+        "img":"ПригодиШерлокаХолмсаТом4.jpg",
+        "title":"Пригоди Шерлока Холмса. Том 3",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"165",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Детективи",
+        "img":"ПригодиШерлокаХолмсаТом3.jpg",
+        "title":"Пригоди Шерлока Холмса. Том 4",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"956",
+        "discount":"875",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":"грнн"
+    },
+    {
+        "section":"Детективи",
+        "img":"СпілкаРудихТаІншіПригодиШерлокаХолмса.jpg",
+        "title":"Книга Спілка Рудих та інші пригоди Шерлока Холмса",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"",
+        "NeVnayawnist":"Немає в наявності",
+        "price":"182",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Детективи",
+        "img":"ПістряваCтрічка.jpg",
+        "title":"Аудиокнига Пістрява стрічка",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"583",
+        "discount":"30",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    },
+    {
+        "section":"Детективи",
+        "img":"ПригодиШерлокаХолмсаТом1.jpg",
+        "title":"Пригоди Шерлока Холмса. Том 1",
+        "author":"Артур Конан Дойл",
+        "Vnayawnist":"В наясності",
+        "NeVnayawnist":"",
+        "price":"888",
+        "discount":"",
+        "text_ner_price":"грн",
+        "text_ner_price_discount":""
+    }
+  ]

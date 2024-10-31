@@ -1,0 +1,561 @@
+/*MAIN INFORMATION*/
+body{
+    background-color: beige;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+body img{
+    user-select: none;
+}
+.ful-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+/*HEADER*/
+.header-bg{
+    height: 50px;
+    background-color: azure;
+}
+.header-content-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: inherit;
+}
+.header-content-lineMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.menu-btn {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    margin: 10px;
+    gap: 10px;
+}
+.menu-line{
+    background-color:azure;
+    width: 25px;
+    height: 1px;
+    border: 1px solid transparent;
+    border-radius: 15px ;
+}
+.header-content-item-logo{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content-item-img-logo{
+    width: 80px;
+    user-select: none
+}
+.text-near-logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    user-select: none
+}
+.left-side-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.account-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url(png/account_icon.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.basket-icon{
+    width: 40px;
+    height: 40px;
+    background-image: url(png/basket_icon.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header-content-right-item{
+    background-color: black;
+}
+
+/*HIDEN MENU*/
+.hedden-menu-box {
+    overflow-y: hidden;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: white;
+
+    z-index: 1;
+}
+.hidden-menu-account-bg{
+    background-color: #333;
+}
+.account-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #f1f1f1;
+}
+.account-text {
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+}
+.thick-line{
+    height: 2px;
+    background-color: rgb(255, 255, 255); 
+    border: none;
+}
+.hedden-menu-box a {
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    background-color: rgb(90, 90, 90);
+    display: block;
+    transition: 0.3s;
+}
+.first-a:hover{
+    background-color: rgb(195, 127, 0);
+}
+.second-a:hover{
+    background-color: rgb(7, 94, 0);
+}
+.third-a:hover{
+    background-color: rgb(0, 101, 144);
+}
+.fourth-a:hover{
+    background-color: rgb(87, 1, 145);
+}
+.hedden-menu-box a:hover {
+    font-weight: 700;
+    color: #ddd;
+}
+.usual-nav-a:hover{
+    background-color: rgb(36, 33, 33);
+}
+.nav-juners{
+    margin-bottom: 10px;
+}
+
+/*HIDDEN MENU ACCOUNT FIELD*/
+.hidden-account {
+    display: none;
+    position: fixed;
+    top: -20;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+.hidAc-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+}
+.hidden-account h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+.hidden-account input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.hidden-account button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.hidden-account button:hover {
+    background-color: #555;
+}
+/*BASKET*/
+
+/*MAIN CONTENT*/
+.greeating-box {
+    background-image: url(png/background.jpg);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.greeting-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+.greeting-scroll-down{
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*PRODUCTS SECTION*/
+.main-content-box-book{
+    background-color: #555;
+    height: max-content;
+    border: 1px solid transparent;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+.book-sticker{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    width: max-content;
+    margin-top: 25px;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    user-select: none;
+
+    position: absolute;
+    left: 0;
+}
+.first-sticker-bg{
+    background-color: orange;
+    border: 3px solid orange;
+}
+.second-sticker-bg{
+    background-color: rgb(14, 162, 3);
+    border: 3px solid rgb(14, 162, 3);
+}
+.third-sticker-bg{
+    background-color: rgb(0, 179, 255);
+    border: 3px solid rgb(0, 179, 255);
+}
+.fourth-sticker-bg{
+    background-color: rgb(153, 0, 255);
+    border: 3px solid  rgb(153, 0, 255)e;
+}
+.book-sticker-container-for-logo{
+    background-color: white;
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-sticker-text{
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.sticker-img{
+    width: 45px;
+}
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 90px 0 50px 0;
+    justify-content: center;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:240px;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+}
+.catalog-item-top{
+    display: flex;
+    justify-content: center;
+}
+.item-card-title, .catalog_item_price_wrappe{
+    margin-bottom: 3px;
+}
+.item-card-title {
+    white-space: nowrap;          
+    overflow: hidden;           
+    text-overflow: ellipsis;      
+    transition: white-space 0.3s ease;
+    position: relative; 
+}
+.catalog-item-extra {
+    transition: 0.7s;
+    display: none; 
+    position: absolute; 
+    top: 94%;
+    left: 0; 
+    background-color: #fff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10; 
+    width: 240px;
+    border: 0, 1px, 1px, 1px solid green;
+    border-radius: 0 0 15px 15px;
+    padding: 0 20px 20px 20px;
+}
+.catalog-item-extra, .item-bottom-btns{
+    margin-top: 15px;
+}
+.nayavnist-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card-nayavnist-img{
+    width: 20px;
+    margin-right: 20px;
+}
+.Vnayavnist-text{
+    color: rgb(9, 83, 9);
+    font-weight: 800;
+}
+.NeVnayavnist-text{
+    color: rgb(83, 9, 9);
+    font-weight: 800;
+}
+.item-bottom-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.item-bottom-btns button{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border:1px solid transparent;
+    border-radius: 15px;
+    width: 50%;
+    cursor:pointer;
+}
+.btn-to-basket{
+    background-color: blue;
+}
+.btn-to-buy{
+    background-color: red;
+}
+.item-bottom-btns button:hover{
+    opacity: 0.5;
+}
+/*Footer*/
+
+.footer-bg {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    max-width: 100%; 
+    padding: 40px 0; 
+    margin: 0 auto;
+}
+.footer-row-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    padding: 0 10px;
+}
+.footer-left-content-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ecf0f1;
+}
+.footer-text-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.fotter-number {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.footer-text-workhours {
+    font-size: 16px;
+    font-weight: 700;
+    color: #bdc3c7;
+    margin-top: 5px;
+}
+
+.footer-left-content-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon-a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon-a:hover {
+    transform: scale(1.1);
+}
+.instagram{background-image: url("png/instagram_icon.jpg");}
+.telegram{background-image: url("png/telegramm_icon.jpg");}
+.facebook{ background-image: url("png/facebook-icon.png");}
+.viber{background-image: url("png/viber_icon.png");}
+.footer-content-item-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-content-item-logo img {
+    width: 50px;
+    height: auto;
+}
+.footer-juners-a{
+    display: flex;
+    flex-direction: column;
+
+    background-color:#2a4158;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.footer-text-near-logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: #e74c3c;
+}
+.footer-juners-a {
+    display: flex;
+    flex-direction: column;
+}
+.footer-juners-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.footer-juners-item:hover {
+    background-color: #34495e;
+}
+.first-a-footer:hover{
+    background-color: rgb(195, 127, 0);
+}
+.second-a-footer:hover{
+    background-color: rgb(7, 94, 0);
+}
+.third-a-footer:hover{
+    background-color: rgb(0, 101, 144);
+}
+.fourth-a-footer:hover{
+    background-color: rgb(87, 1, 145);
+}
+.hedden-menu-box a:hover {
+    font-weight: 700;
+    color: #ddd;
+}
+.footer-right a{
+    text-decoration: none;
+}
+.footer-middle-title {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.footer-middle-text {
+    font-size: 18px;
+    color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+}
+.footer-thick-line {
+    width: 100%;
+    border: 1px solid #7f8c8d;
+    margin: 20px 0;
+}
+.footer-bottom-title {
+    font-size: 14px;
+    color: #95a5a6;
+    text-align: center;
+    margin-top: 10px;
+}
