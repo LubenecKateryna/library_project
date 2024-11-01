@@ -1,3 +1,7 @@
+/*MENU LINES */
+
+
+
 /*HIDDEN MENU */
 const hiddenMenu = document.getElementById("lefthiddemMenuBox");
 const mainMenuBtn = document.getElementById("header-menu-btn");
@@ -30,8 +34,17 @@ accountIcons.forEach(icon => {
 
 saveBtn.addEventListener("click", () => {
     const name = document.getElementById("getnameInput").value.trim();
-    document.getElementById("accountText").textContent = name ? `Вітаю, ${name}` : "Увійти в акаунт";
-    document.getElementById("greetingText").textContent = name ? `Привіт, ${name}, давай читати!` : "Привіт, давай читати!";
+    const sureName = document.getElementById("getSureNameInput").value.trim();
+    if (name&&sureName) {
+        document.getElementById("accountText").textContent = "Вітаю, " + name + " " + sureName;
+        document.getElementById("greetingText").textContent = "Привіт, " + name + " " + sureName + ",давай читати!";
+    }else if(name) {
+        document.getElementById("accountText").textContent = "Вітаю, " + name;
+        document.getElementById("greetingText").textContent = "Привіт, " + name + ",давай читати!";
+    } else {
+        document.getElementById("accountText").textContent = "Увійти в акаунт";
+        document.getElementById("greetingText").textContent = "Привіт, давай читати!";
+    }
     hiddenAccount.style.display = "none";
 });
 
@@ -64,7 +77,7 @@ function getProductHtml(product) {
                         <span class="btn-to-basket">${product.btnToBasket}</span>
                         <span class="btn-to-buy">${product.btnBuy}</span>
                     </div>
-                    <span class="btn-wait" ${isAvailable ? 'style="display: none;"' : ''}>${product.btnWait}</span>
+                    <span id="btnWait" class="btn-wait" ${isAvailable ? 'style="display: none;"' : ''}>${product.btnWait}</span>
                 </div>
             </div>
         </div>
@@ -100,7 +113,112 @@ getProducts().then(products => {
     });
 });
 
+/*CARDS BTNS */
+const btnTObuy = document.querySelectorAll(".btn-to-buy");
+const btnTObasket = document.querySelectorAll(".btn-to-basket");
+const btnTOwait = document.querySelectorAll(".btn-wait");
+
+btnTOwait.forEach(btn => {
+    btn.addEventListener("click", showWaitAllert);
+});
+function showWaitAllert() {
+    alert("Ця книга скоро буде у наявності :) ");
+}
+
+
+
 /*HIDDEN BASCKET */
+
+function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingProductIndex = cart.findIndex(item => item.title === product.title);
+
+    if (existingProductIndex !== -1) {
+        cart[existingProductIndex].quantity += 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartBadge();
+
+    const cartIcon = document.getElementById('cart-icon');
+    cartIcon.classList.add('pulse');
+    setTimeout(() => cartIcon.classList.remove('pulse'), 300);
+}
+
+function showCartPopup() {
+    const cartPopup = document.getElementById('cart-popup');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    cartItemsContainer.innerHTML = '';
+
+    cart.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('cart-item');
+        itemElement.innerHTML = `
+            <span>${item.title}</span>
+            <span>${item.quantity} x ${item.price} грн</span>
+        `;
+        cartItemsContainer.appendChild(itemElement);
+    });
+
+    cartPopup.classList.remove('hidden');
+    cartPopup.classList.add('visible');
+}
+
+function updateCartBadge() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+    const badge = document.getElementById('cart-badge');
+    badge.textContent = totalItems;
+}
+
+document.getElementById('checkout-button').addEventListener('click', () => {
+    localStorage.removeItem('cart');
+    updateCartBadge();
+
+    const cartPopup = document.getElementById('cart-popup');
+    cartPopup.classList.add('hidden');
+    cartPopup.classList.remove('visible');
+
+    alert("Все оплачено!");
+});
+
+const cartIcon = document.getElementById('cart-icon');
+cartIcon.addEventListener('click', () => {
+    showCartPopup();
+});
+
+const closeBtn = document.getElementById('close-btn');
+closeBtn.addEventListener('click', () => {
+    const cartPopup = document.getElementById('cart-popup');
+    cartPopup.classList.add('hidden');
+    cartPopup.classList.remove('visible');
+});
+
+document.addEventListener('DOMContentLoaded', updateCartBadge);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*GREETING_SCROLL*/
 const hiddenElement = document.getElementById("first-junr-books");
@@ -115,7 +233,7 @@ btn.addEventListener("click", handleButtonClick);
 /*SCROLL_TO_TOP */
 const main_scroll_to_top = document.querySelector('.scroll_to_top_button')
 window.addEventListener('scroll', function(){
-    if(window.scrollY < 500){
+    if(window.scrollY < 900){
         document.querySelector(".scroll_to_top_button").classList.remove("scroll_btn_visibility")
     }else{
         main_scroll_to_top.classList.add("scroll_btn_visibility")

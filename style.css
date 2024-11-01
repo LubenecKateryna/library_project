@@ -3,7 +3,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #56CE9A;
     background: -moz-linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
     background: -webkit-linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
     background: linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
@@ -59,11 +58,24 @@ body img{
     gap: 10px;
 }
 .menu-line{
+    transition: 0.3s;
     background-color:azure;
     width: 25px;
     height: 1px;
     border: 1px solid transparent;
     border-radius: 15px ;
+}
+.menu-btn:focus .menu-line:nth-child(1) {
+    transform: translateY(1px) rotate(-35deg) translateX(-4px);
+    width: 20px;
+}
+.menu-btn:focus .menu-line:nth-child(2) {
+    transform: translate(-50%);
+    opacity: 0;
+}
+.menu-btn:focus .menu-line:nth-child(3) {
+    transform: translateY(1px) rotate(35deg) translateX(-5px) translateZ(-2px);
+    width: 20px;
 }
 .header-content-item-logo{
     text-decoration: none;
@@ -78,12 +90,13 @@ body img{
 .text-near-logo{
     font-size: 30px;
     font-weight: 700;
-    color: black;
+    color: #333;
     user-select: none
 }
 .left-side-content{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }
 .account-icon {
@@ -92,7 +105,7 @@ body img{
     background-image: url(png/account_icon.png);
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 15px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -235,8 +248,9 @@ body img{
 .hidden-account button:hover {
     background-color: #555;
 }
+
 /*BASKET AND HIDDEN BASCKET*/
-.cart-icon {
+/* .cart-icon {
     background-image: url(png/cart.png);
     background-position: center;
     background-size: cover;
@@ -246,6 +260,220 @@ body img{
     border-radius: 50%;
     background-color: white;
     cursor: pointer;
+} */
+
+.nav-links {
+    display: none;
+    gap: 20px;
+}
+
+.show-menu {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+.icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.badge {
+    display: flex;
+    color: black;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-20px, 12px);
+}
+
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.cart-popup-content {
+    padding: 20px;
+}
+
+.cart-popup.hidden {
+    transform: translateX(100%);
+}
+
+.cart-popup.visible {
+    transform: translateX(0);
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.pulse {
+    animation: pulse-animation 0.3s ease;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Общие стили для попапа */
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.cart-popup.hidden {
+    transform: translateX(100%);
+}
+
+.cart-popup.visible {
+    transform: translateX(0);
+}
+
+/* Содержимое попапа */
+.cart-popup-content {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Кнопка закрытия попапа */
+.close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* Заголовок попапа */
+.cart-popup-content h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Список товаров в корзине */
+.cart-items {
+    overflow-y: auto;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item span {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.cart-item .item-quantity {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+/* Общая сумма */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+    margin-top: 15px;
+}
+
+/* Кнопка "Купить" с анимацией градиента */
+.checkout-button {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #8ed081, #70e1f5);
+    background-size: 400% 400%;
+    color: #fbf9f9;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+.checkout-button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /*MAIN CONTENT*/
@@ -364,14 +592,23 @@ body img{
     display: flex;
     justify-content: center;
 }
-.item-card-title, .catalog_item_price_wrappe{
-    margin-bottom: 3px;
+.item-card-title{
+    margin-bottom: 5px;
+}
+.current_price_text{
+    color: green;
+    font-weight: 800;
+    font-size: 16px;
+}
+.old_price_text{
+    color: rgb(177, 8, 8);
+    font-weight: 800;
+    font-size: 16px;
 }
 .item-card-title {
     white-space: nowrap;          
     overflow: hidden;           
     text-overflow: ellipsis;      
-    transition: white-space 0.3s ease;
     position: relative; 
 }
 .catalog-item-extra {
@@ -395,19 +632,26 @@ body img{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: max-content;
+    background-color: rgb(198, 239, 239);
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px 10px 15px 15px;
+    margin-top: 10px;
 }.card-nayavnist-img{
     width: 20px;
     margin-right: 20px;
+    padding: 5px;
+    background-color: rgb(135, 181, 28);
+    border: none;
+    border-radius: 50%;
 }.Vnayavnist-text{
     color: rgb(9, 83, 9);
-    font-weight: 800;
+    font-weight: 700;
 }.NeVnayavnist-text{
     color: rgb(83, 9, 9);
-    font-weight: 800;
+    font-weight: 700;
 }
-
-
-
 
 .item-bottom-btns {
     display: flex;
@@ -424,12 +668,13 @@ body img{
 
 .botton-btn-VNAyavnosyi span {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: white;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn-to-basket {
@@ -443,22 +688,26 @@ body img{
 .btn-wait {
     background-color: #56CE9A;
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: white;
     border-radius: 8px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .btn-to-basket:hover {
-    background-color: #34495e;
+    background-color: #19232d;
 }
 
 .btn-to-buy:hover {
-    background-color: #d49a4d;
+    background-color: #af8145;
+}
+.btn-wait:hover{
+    background-color: #4cb085;
 }
 
-.btn-wait {
+.btn-wait,.btn-to-buy,.btn-to-basket {
     opacity: 0.8;
 }
 
@@ -603,26 +852,27 @@ body img{
 
 /*SCROLL TO TOP*/
 .scroll_to_top_button{
+    background: linear-gradient(45deg, #CE7F3B 0%, #7276A4 51%, #5EC4C5 100%);
     position: fixed;
     right: 50px;
     bottom: 50px;
     z-index: 1000;
-    width: 100px;
-    height: 90px;
-    color: #dcdcdc;
+    width: 80px;
+    height: 70px;
+    color: azure;
     cursor: pointer;
-    border: 8px solid #dcdcdc;
+    border: 5px solid azure;
     border-radius: 50%;
     transition: 0.6s;
     transform: translateY(25px);
     opacity: 0;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
 }
 .scroll_to_top_button:hover{
-    border-color: orange;
-    color: orange;
-    transition: 0.2s;
+    filter: invert();
+    color: rgb(218, 231, 231);
+    transition: background 0.2s;
 }
 .scroll_btn_visibility{
     opacity: 1;
