@@ -114,8 +114,6 @@ getProducts().then(products => {
 });
 
 /*CARDS BTNS */
-const btnTObuy = document.querySelectorAll(".btn-to-buy");
-const btnTObasket = document.querySelectorAll(".btn-to-basket");
 const btnTOwait = document.querySelectorAll(".btn-wait");
 
 btnTOwait.forEach(btn => {
@@ -125,10 +123,7 @@ function showWaitAllert() {
     alert("Ця книга скоро буде у наявності :) ");
 }
 
-
-
 /*HIDDEN BASCKET */
-
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const existingProductIndex = cart.findIndex(item => item.title === product.title);

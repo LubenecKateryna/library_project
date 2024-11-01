@@ -3,9 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: -moz-linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
-    background: -webkit-linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
-    background: linear-gradient(45deg, #56CE9A 0%, #8C95A4 50%, #C59237 100%);
+    background: linear-gradient(45deg, #4581CE 0%, #769AAE 49%, #50C578 100%);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
