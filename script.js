@@ -1,7 +1,3 @@
-/*MENU LINES */
-
-
-
 /*HIDDEN MENU */
 const hiddenMenu = document.getElementById("lefthiddemMenuBox");
 const mainMenuBtn = document.getElementById("header-menu-btn");
@@ -35,10 +31,10 @@ accountIcons.forEach(icon => {
 saveBtn.addEventListener("click", () => {
     const name = document.getElementById("getnameInput").value.trim();
     const sureName = document.getElementById("getSureNameInput").value.trim();
-    if (name&&sureName) {
+    if (name && sureName) {
         document.getElementById("accountText").textContent = "Вітаю, " + name + " " + sureName;
         document.getElementById("greetingText").textContent = "Привіт, " + name + " " + sureName + ",давай читати!";
-    }else if(name) {
+    } else if (name) {
         document.getElementById("accountText").textContent = "Вітаю, " + name;
         document.getElementById("greetingText").textContent = "Привіт, " + name + ",давай читати!";
     } else {
@@ -74,8 +70,8 @@ function getProductHtml(product) {
                 </div>
                 <div class="item-bottom-btns">
                     <div class="botton-btn-VNAyavnosyi" ${isUnavailable ? 'style="display: none;"' : ''}>
-                        <span class="btn-to-basket">${product.btnToBasket}</span>
-                        <span class="btn-to-buy">${product.btnBuy}</span>
+                        <button class="btn-to-basket" data-product='${JSON.stringify(product)}'>${product.btnToBasket}</button>
+                        <button class="btn-to-buy">${product.btnBuy}</button>
                     </div>
                     <span id="btnWait" class="btn-wait" ${isAvailable ? 'style="display: none;"' : ''}>${product.btnWait}</span>
                 </div>
@@ -88,7 +84,7 @@ async function getProducts() {
     const response = await fetch('main.json');
     const data = await response.json();
 
-    return data;   
+    return data;
 }
 
 getProducts().then(products => {
@@ -110,6 +106,14 @@ getProducts().then(products => {
         const extraContent = card.querySelector('.catalog-item-extra');
         card.addEventListener('mouseenter', () => extraContent.style.display = "block");
         card.addEventListener('mouseleave', () => extraContent.style.display = "none");
+
+        const addToCartBtns = card.querySelectorAll('.btn-to-basket');
+        addToCartBtns.forEach(btn => {
+            btn.addEventListener('click', (event) => {
+                const product = JSON.parse(event.target.dataset.product);
+                addToCart(product);
+            });
+        });
     });
 });
 
@@ -195,47 +199,27 @@ closeBtn.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', updateCartBadge);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*GREETING_SCROLL*/
 const hiddenElement = document.getElementById("first-junr-books");
 const btn = document.querySelector(".greeting-content");
 
 function handleButtonClick() {
-  hiddenElement.scrollIntoView({ block: "center"});
+    hiddenElement.scrollIntoView({ block: "center"});
 }
 
 btn.addEventListener("click", handleButtonClick);
 
 /*SCROLL_TO_TOP */
-const main_scroll_to_top = document.querySelector('.scroll_to_top_button')
-window.addEventListener('scroll', function(){
-    if(window.scrollY < 900){
-        document.querySelector(".scroll_to_top_button").classList.remove("scroll_btn_visibility")
-    }else{
-        main_scroll_to_top.classList.add("scroll_btn_visibility")
+const main_scroll_to_top = document.querySelector('.scroll_to_top_button');
+window.addEventListener('scroll', function() {
+    if (window.scrollY < 900) {
+        document.querySelector(".scroll_to_top_button").classList.remove("scroll_btn_visibility");
+    } else {
+        main_scroll_to_top.classList.add("scroll_btn_visibility");
     }
-})
+});
 document.querySelector(".scroll_to_top_button").onclick = function() {
-    window.scrollTo( 0, 0)
+    window.scrollTo( 0, 0);
 }
 
 /*FOOTER ICONS */
